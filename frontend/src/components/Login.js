@@ -154,6 +154,19 @@ const Login = ({ onLogin }) => {
                 </div>
               </div>
 
+              <div className="flex items-center justify-end gap-2 pt-2">
+                <label htmlFor="remember" className="text-sm text-gray-700 cursor-pointer select-none">
+                  تذكرني
+                </label>
+                <input
+                  type="checkbox"
+                  id="remember"
+                  checked={rememberMe}
+                  onChange={(e) => setRememberMe(e.target.checked)}
+                  className="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500 cursor-pointer"
+                />
+              </div>
+
             </CardContent>
 
             <CardFooter className="flex flex-col gap-3">
