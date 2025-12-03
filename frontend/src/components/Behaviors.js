@@ -41,21 +41,13 @@ const Behaviors = ({ user }) => {
 
   const handleAddBehavior = () => {
     if (!newBehavior.stage || !newBehavior.class || !newBehavior.studentId || !newBehavior.type || !newBehavior.points || !newBehavior.description) {
-      toast({
-        title: 'خطأ',
-        description: 'يرجى ملء جميع الحقول',
-        variant: 'destructive'
-      });
+      alert('يرجى ملء جميع الحقول');
       return;
     }
 
     const points = parseInt(newBehavior.points);
     if (points < 1 || points > 10) {
-      toast({
-        title: 'خطأ',
-        description: 'يجب أن تكون النقاط بين 1 و 10',
-        variant: 'destructive'
-      });
+      alert('يجب أن تكون النقاط بين 1 و 10');
       return;
     }
 
@@ -71,14 +63,14 @@ const Behaviors = ({ user }) => {
       date: new Date().toISOString().split('T')[0]
     };
 
+    // Add to mockBehaviors array
+    mockBehaviors.push(behavior);
+    
     setBehaviors([behavior, ...behaviors]);
     setIsAddDialogOpen(false);
     setNewBehavior({ stage: '', class: '', studentId: '', type: '', points: '', description: '' });
     
-    toast({
-      title: 'تمت الإضافة بنجاح',
-      description: `تم تسجيل السلوك للطالبة`
-    });
+    alert('تمت الإضافة بنجاح - تم تسجيل السلوك للطالبة');
   };
 
   const selectedStage = STAGES.find(s => s.value === newBehavior.stage);
