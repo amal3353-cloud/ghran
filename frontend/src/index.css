@@ -82,6 +82,56 @@ code {
     }
 }
 
+/* Print Styles */
+@media print {
+    @page {
+        size: A4;
+        margin: 1cm;
+    }
+    
+    body {
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+    }
+    
+    .print\:hidden {
+        display: none !important;
+    }
+    
+    .print\:block {
+        display: block !important;
+    }
+    
+    .print\:break-inside-avoid {
+        break-inside: avoid;
+    }
+    
+    .print\:p-2 {
+        padding: 0.5rem !important;
+    }
+    
+    .print\:gap-2 {
+        gap: 0.5rem !important;
+    }
+    
+    /* Hide navigation and buttons when printing */
+    header, footer, button, .no-print {
+        display: none !important;
+    }
+    
+    /* Ensure proper spacing */
+    .space-y-6 {
+        margin-top: 1rem !important;
+        margin-bottom: 1rem !important;
+    }
+    
+    /* Make sure colors print correctly */
+    * {
+        color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+    }
+}
+
 @layer base {
     [data-debug-wrapper="true"] {
         display: contents !important;
