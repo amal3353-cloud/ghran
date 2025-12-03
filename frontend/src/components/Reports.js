@@ -186,7 +186,7 @@ const Reports = ({ user }) => {
 
       {/* Print Header - Show only on print */}
       <div className="hidden print:block text-center mb-6">
-        <h1 className="text-2xl font-bold mb-2">رواد القيم</h1>
+        <h1 className="text-2xl font-bold mb-2">رواد التميز</h1>
         <p className="text-lg">مدرسة متوسطة غران</p>
         <p className="text-sm text-gray-600 mt-2">تقرير {reportData.period} - {new Date().toLocaleDateString('ar-SA')}</p>
         <p className="text-sm text-gray-600">المرحلة: {selectedStage === 'all' ? 'جميع المراحل' : getStageLabel(selectedStage)}</p>
