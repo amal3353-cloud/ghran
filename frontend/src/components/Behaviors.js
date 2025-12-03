@@ -323,13 +323,25 @@ const Behaviors = ({ user }) => {
                         <span>المعلمة: {behavior.teacherName}</span>
                       </div>
                     </div>
-                    <div className="text-left">
-                      <div className={`text-2xl font-bold ${
-                        behavior.type === 'positive' ? 'text-emerald-600' : 'text-red-600'
-                      }`}>
-                        {behavior.points > 0 ? '+' : ''}{behavior.points}
+                    <div className="flex items-center gap-3">
+                      <div className="text-left">
+                        <div className={`text-2xl font-bold ${
+                          behavior.type === 'positive' ? 'text-emerald-600' : 'text-red-600'
+                        }`}>
+                          {behavior.points > 0 ? '+' : ''}{behavior.points}
+                        </div>
+                        <p className="text-xs text-gray-500">نقطة</p>
                       </div>
-                      <p className="text-xs text-gray-500">نقطة</p>
+                      {canEdit && (
+                        <Button
+                          variant="ghost"
+                          size="sm"
+                          onClick={() => handleDeleteBehavior(behavior.id)}
+                          className="text-red-600 hover:text-red-700 hover:bg-red-50"
+                        >
+                          <Trash2 className="w-4 h-4" />
+                        </Button>
+                      )}
                     </div>
                   </div>
                 </div>
