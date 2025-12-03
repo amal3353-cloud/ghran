@@ -151,7 +151,7 @@ const Layout = ({ user, onLogout, children }) => {
       <footer className="bg-gradient-to-r from-blue-600 to-emerald-600 mt-12">
         <div className="container mx-auto px-4 py-8">
           <div className="text-center">
-            <p className="text-white font-semibold text-sm mb-3">© 2025 رواد التميز - جميع الحقوق محفوظة</p>
+            <p className="text-white font-semibold text-sm mb-3">© 2025 مدرسة متوسطة غران - جميع الحقوق محفوظة</p>
             <div className="flex flex-col md:flex-row justify-center items-center gap-4 text-blue-100">
               <div className="flex items-center gap-2">
                 <GraduationCap className="w-4 h-4" />
