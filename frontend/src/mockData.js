@@ -67,7 +67,7 @@ export const mockStudents = [
     name: 'ابرار محمد بن حمدان بن احمد الحيدي الشهري',
     stage: 'first_middle',
     class: 'أ',
-    totalPoints: 85,
+    totalPoints: 0,
     email: 'abrar@student.moe.edu.sa'
   },
   {
@@ -75,28 +75,28 @@ export const mockStudents = [
     name: 'جمان احمد مسعد الصحفي',
     stage: 'first_middle',
     class: 'أ',
-    totalPoints: 78
+    totalPoints: 0
   },
   {
     id: 'S003',
     name: 'تاله صلاح محمد الصحفي',
     stage: 'first_middle',
     class: 'أ',
-    totalPoints: 72
+    totalPoints: 0
   },
   {
     id: 'S004',
     name: 'ترف علي صالح الصحفي',
     stage: 'first_middle',
     class: 'أ',
-    totalPoints: 65
+    totalPoints: 0
   },
   {
     id: 'S005',
     name: 'جمانه حمادي حميد الحربى',
     stage: 'first_middle',
     class: 'أ',
-    totalPoints: 60
+    totalPoints: 0
   },
   {
     id: 'S006',
@@ -201,35 +201,35 @@ export const mockStudents = [
     name: 'ألين محمد سعيد الصحفي',
     stage: 'first_middle',
     class: 'ب',
-    totalPoints: 92
+    totalPoints: 0
   },
   {
     id: 'S021',
     name: 'اسماء لاحق محمد الحربي',
     stage: 'first_middle',
     class: 'ب',
-    totalPoints: 88
+    totalPoints: 0
   },
   {
     id: 'S022',
     name: 'الجازي مسعود سعيد المسفري المجنوني',
     stage: 'first_middle',
     class: 'ب',
-    totalPoints: 81
+    totalPoints: 0
   },
   {
     id: 'S023',
     name: 'الجوري باسم احمد الصحفي',
     stage: 'first_middle',
     class: 'ب',
-    totalPoints: 75
+    totalPoints: 0
   },
   {
     id: 'S024',
     name: 'الين ضيف الله بن سليمان الحربي',
     stage: 'first_middle',
     class: 'ب',
-    totalPoints: 70
+    totalPoints: 0
   },
   {
     id: 'S025',
@@ -355,35 +355,35 @@ export const mockStudents = [
     name: 'أسيل نواف عبدالكريم الصحفي',
     stage: 'third_middle',
     class: 'أ',
-    totalPoints: 95
+    totalPoints: 0
   },
   {
     id: 'S043',
     name: 'أيه بدر عبود الصحفي',
     stage: 'third_middle',
     class: 'أ',
-    totalPoints: 90
+    totalPoints: 0
   },
   {
     id: 'S044',
     name: 'ايلاف بنت حميد بن سويد البسيسي السلمي',
     stage: 'third_middle',
     class: 'أ',
-    totalPoints: 86
+    totalPoints: 0
   },
   {
     id: 'S045',
     name: 'ايمان احمد نافع المعبدي',
     stage: 'third_middle',
     class: 'أ',
-    totalPoints: 82
+    totalPoints: 0
   },
   {
     id: 'S046',
     name: 'تالا عطيه بن رازن الصحفي',
     stage: 'third_middle',
     class: 'أ',
-    totalPoints: 78
+    totalPoints: 0
   },
   {
     id: 'S047',
@@ -579,35 +579,35 @@ export const mockStudents = [
     name: 'أريام محمد عامر الهندي',
     stage: 'third_middle',
     class: 'ب',
-    totalPoints: 98
+    totalPoints: 0
   },
   {
     id: 'S075',
     name: 'ألين ثامر عبدالرحمن الصحفي',
     stage: 'third_middle',
     class: 'ب',
-    totalPoints: 93
+    totalPoints: 0
   },
   {
     id: 'S076',
     name: 'ابرار كامل كمال علي',
     stage: 'third_middle',
     class: 'ب',
-    totalPoints: 89
+    totalPoints: 0
   },
   {
     id: 'S077',
     name: 'بيسان عبدالرحمن محمد عبدالواحد',
     stage: 'third_middle',
     class: 'ب',
-    totalPoints: 84
+    totalPoints: 0
   },
   {
     id: 'S078',
     name: 'تالين علي بن محمد العمري',
     stage: 'third_middle',
     class: 'ب',
-    totalPoints: 80
+    totalPoints: 0
   },
   {
     id: 'S079',
