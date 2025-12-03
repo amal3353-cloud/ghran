@@ -89,6 +89,23 @@ const Behaviors = ({ user }) => {
     return student ? student.name : studentId;
   };
 
+  const handleDeleteBehavior = (behaviorId) => {
+    if (!window.confirm('هل أنت متأكد من حذف هذا السلوك؟')) {
+      return;
+    }
+    
+    const updatedBehaviors = behaviors.filter(b => b.id !== behaviorId);
+    setBehaviors(updatedBehaviors);
+    
+    // Update mockBehaviors array
+    const index = mockBehaviors.findIndex(b => b.id === behaviorId);
+    if (index > -1) {
+      mockBehaviors.splice(index, 1);
+    }
+    
+    alert('تم حذف السلوك بنجاح');
+  };
+
   return (
     <div className="space-y-6">
       <div className="flex items-center justify-between">
