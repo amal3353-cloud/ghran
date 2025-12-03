@@ -9,7 +9,8 @@ import {
   User, 
   LogOut, 
   Menu, 
-  X 
+  X,
+  Settings as SettingsIcon
 } from 'lucide-react';
 
 const Layout = ({ user, onLogout, children }) => {
