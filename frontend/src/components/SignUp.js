@@ -5,7 +5,6 @@ import { Input } from './ui/input';
 import { Label } from './ui/label';
 import { Card, CardHeader, CardContent, CardFooter } from './ui/card';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from './ui/select';
-import { toast } from '../hooks/use-toast';
 import { mockUsers } from '../mockData';
 import { GraduationCap, Mail, Lock, User, Phone, ArrowRight } from 'lucide-react';
 
