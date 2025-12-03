@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Card, CardHeader, CardContent, CardTitle, CardDescription } from './ui/card';
 import { Button } from './ui/button';
 import { Alert, AlertDescription } from './ui/alert';
-import { Trash2, AlertTriangle } from 'lucide-react';
+import { Trash2, AlertTriangle, TrendingDown } from 'lucide-react';
 import { toast } from '../hooks/use-toast';
 import { mockStudents, mockBehaviors } from '../mockData';
 
