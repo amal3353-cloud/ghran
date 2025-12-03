@@ -53,9 +53,11 @@ const Login = ({ onLogin }) => {
         if (rememberMe) {
           localStorage.setItem('savedEmail', email);
           localStorage.setItem('savedPassword', password);
+          localStorage.setItem('rememberMe', 'true');
         } else {
           localStorage.removeItem('savedEmail');
           localStorage.removeItem('savedPassword');
+          localStorage.removeItem('rememberMe');
         }
         
         onLogin(user);
