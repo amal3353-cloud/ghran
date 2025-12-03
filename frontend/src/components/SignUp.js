@@ -107,7 +107,7 @@ const SignUp = ({ onSignUp }) => {
             </div>
           </Link>
           <h1 className="text-3xl font-bold text-white mb-2">إنشاء حساب جديد</h1>
-          <p className="text-blue-100">منصة رصد السلوك المتميز</p>
+          <p className="text-blue-100">رواد القيم</p>
         </div>
 
         <Card className="backdrop-blur-xl bg-white/95 border-white/20 shadow-2xl">
