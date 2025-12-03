@@ -211,8 +211,7 @@ const Login = ({ onLogin }) => {
         {/* Footer Info */}
         <div className="text-center mt-8">
           <div className="backdrop-blur-lg bg-white/10 rounded-xl py-3 px-6 inline-block border border-white/20">
-            <p className="text-white font-medium text-sm mb-1">✨ رواد التميز</p>
-            <p className="text-blue-100 text-xs">تصميم وتطوير: المعلمة امل عطيه المزروعي</p>
+            <p className="text-white font-medium text-sm">✨ تصميم وتطوير: المعلمة امل عطيه المزروعي</p>
           </div>
         </div>
         </div>
