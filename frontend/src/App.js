@@ -101,7 +101,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
             <GraduationCap className="w-8 h-8" />
-            <h1 className="text-xl font-bold">منصة رصد السلوك المتميز</h1>
+            <h1 className="text-xl font-bold">رواد القيم</h1>
           </div>
           <div className="flex items-center gap-4">
             <Link to="/dashboard">
