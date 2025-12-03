@@ -25,21 +25,13 @@ const SignUp = ({ onSignUp }) => {
 
     // Validation
     if (!formData.name || !formData.email || !formData.password || !formData.role) {
-      toast({
-        title: 'خطأ',
-        description: 'يرجى ملء جميع الحقول المطلوبة',
-        variant: 'destructive'
-      });
+      alert('يرجى ملء جميع الحقول المطلوبة');
       setLoading(false);
       return;
     }
 
     if (formData.password.length < 6) {
-      toast({
-        title: 'خطأ',
-        description: 'يجب أن تكون كلمة المرور 6 أحرف على الأقل',
-        variant: 'destructive'
-      });
+      alert('يجب أن تكون كلمة المرور 6 أحرف على الأقل');
       setLoading(false);
       return;
     }
@@ -47,11 +39,7 @@ const SignUp = ({ onSignUp }) => {
     // Check if email already exists
     const existingUser = mockUsers.find(u => u.email === formData.email);
     if (existingUser) {
-      toast({
-        title: 'خطأ',
-        description: 'البريد الإلكتروني مسجل بالفعل',
-        variant: 'destructive'
-      });
+      alert('البريد الإلكتروني مسجل بالفعل');
       setLoading(false);
       return;
     }
@@ -77,7 +65,8 @@ const SignUp = ({ onSignUp }) => {
         onSignUp(newUser);
       }
 
-      toast({
+      // Use alert instead of toast to avoid portal issues
+      alert('تم إنشاء الحساب بنجاح!');
         title: 'تم إنشاء الحساب بنجاح',
         description: `مرحباً ${newUser.name}`
       });
