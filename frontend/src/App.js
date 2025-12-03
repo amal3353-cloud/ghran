@@ -10,6 +10,7 @@ import Behaviors from "./components/Behaviors";
 import Profile from "./components/Profile";
 import StudentView from "./components/StudentView";
 import Reports from "./components/Reports";
+import Settings from "./components/Settings";
 import { Toaster } from "./components/ui/toaster";
 
 function App() {
