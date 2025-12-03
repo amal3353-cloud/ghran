@@ -11,8 +11,20 @@ import { GraduationCap, Mail, Lock, TrendingUp, Award, FileText } from 'lucide-r
 const Login = ({ onLogin }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [rememberMe, setRememberMe] = useState(false);
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
+
+  // Check for saved credentials on mount
+  React.useEffect(() => {
+    const savedEmail = localStorage.getItem('savedEmail');
+    const savedPassword = localStorage.getItem('savedPassword');
+    if (savedEmail && savedPassword) {
+      setEmail(savedEmail);
+      setPassword(savedPassword);
+      setRememberMe(true);
+    }
+  }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -24,6 +36,16 @@ const Login = ({ onLogin }) => {
       
       if (user) {
         localStorage.setItem('user', JSON.stringify(user));
+        
+        // Save credentials if remember me is checked
+        if (rememberMe) {
+          localStorage.setItem('savedEmail', email);
+          localStorage.setItem('savedPassword', password);
+        } else {
+          localStorage.removeItem('savedEmail');
+          localStorage.removeItem('savedPassword');
+        }
+        
         onLogin(user);
         toast({
           title: 'تم تسجيل الدخول بنجاح',
