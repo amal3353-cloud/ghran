@@ -427,7 +427,7 @@ async def clear_statistics(current_user: dict = Depends(get_current_user)):
 
 @api_router.get("/")
 async def root():
-    return {"message": "منصة رصد السلوك المتميز - API"}
+    return {"message": "رواد القيم - API"}
 
 # Include the router in the main app
 app.include_router(api_router)
