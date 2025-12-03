@@ -47,7 +47,7 @@ const Layout = ({ user, onLogout, children }) => {
                 <GraduationCap className="w-6 h-6" />
               </div>
               <div>
-                <h1 className="text-xl font-bold">منصة رصد السلوك المتميز</h1>
+                <h1 className="text-xl font-bold">رواد القيم</h1>
                 <p className="text-xs text-blue-100">مدرسة متوسطة غران</p>
               </div>
             </Link>
