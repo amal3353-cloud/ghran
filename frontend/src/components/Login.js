@@ -61,17 +61,10 @@ const Login = ({ onLogin }) => {
         }
         
         onLogin(user);
-        toast({
-          title: 'تم تسجيل الدخول بنجاح',
-          description: `مرحباً ${user.name}`
-        });
+        // Use simple navigation without toast to avoid portal issues
         navigate('/dashboard');
       } else {
-        toast({
-          title: 'خطأ في تسجيل الدخول',
-          description: 'البريد الإلكتروني أو كلمة المرور غير صحيحة',
-          variant: 'destructive'
-        });
+        alert('البريد الإلكتروني أو كلمة المرور غير صحيحة');
       }
       setLoading(false);
     }, 1000);
