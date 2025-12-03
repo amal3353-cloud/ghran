@@ -148,12 +148,20 @@ const Layout = ({ user, onLogout, children }) => {
       </main>
 
       {/* Footer */}
-      <footer className="bg-white border-t border-gray-200 mt-12">
-        <div className="container mx-auto px-4 py-6">
-          <div className="text-center text-gray-600">
-            <p className="text-sm">© 2025 رواد التميز - جميع الحقوق محفوظة</p>
-            <p className="text-xs text-gray-500 mt-1">مديرة المدرسة: عائشة عبدالعزيز الراشدي</p>
-            <p className="text-xs text-gray-400 mt-1">تصميم: امل عطيه المزروعي</p>
+      <footer className="bg-gradient-to-r from-blue-600 to-emerald-600 mt-12">
+        <div className="container mx-auto px-4 py-8">
+          <div className="text-center">
+            <p className="text-white font-semibold text-sm mb-3">© 2025 رواد التميز - جميع الحقوق محفوظة</p>
+            <div className="flex flex-col md:flex-row justify-center items-center gap-4 text-blue-100">
+              <div className="flex items-center gap-2">
+                <GraduationCap className="w-4 h-4" />
+                <span className="text-xs">مديرة المدرسة: عائشة عبدالعزيز الراشدي</span>
+              </div>
+              <div className="hidden md:block text-blue-300">•</div>
+              <div className="flex items-center gap-2">
+                <span className="text-xs">✨ تصميم وتطوير: المعلمة امل عطيه المزروعي</span>
+              </div>
+            </div>
           </div>
         </div>
       </footer>
