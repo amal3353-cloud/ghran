@@ -6,7 +6,7 @@ import { Label } from './ui/label';
 import { Textarea } from './ui/textarea';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger, DialogFooter } from './ui/dialog';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from './ui/select';
-import { toast } from '../hooks/use-toast';
+// import { toast } from '../hooks/use-toast'; // Removed to avoid portal issues
 import { mockStudents, mockBehaviors, BEHAVIOR_TYPES, STAGES, getStageLabel } from '../mockData';
 import { Plus, TrendingUp, TrendingDown, Calendar, Trash2 } from 'lucide-react';
 
