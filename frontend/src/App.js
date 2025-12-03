@@ -201,8 +201,8 @@ const LoginPage = () => {
               <GraduationCap className="w-12 h-12 text-blue-600" />
             </div>
           </div>
-          <h1 className="text-4xl font-bold text-white mb-2">منصة رصد السلوك المتميز</h1>
-          <p className="text-blue-100">مدرسة متوسطة عدران</p>
+          <h1 className="text-4xl font-bold text-white mb-2">رواد القيم</h1>
+          <p className="text-blue-100">مدرسة متوسطة غران</p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-6 mb-8">
