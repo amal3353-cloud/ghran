@@ -794,7 +794,8 @@ export const mockStudents = [
 ];
 
 export const mockBehaviors = [
-  {
+  // All behaviors cleared - starting fresh
+  /* {
     id: 'B001',
     studentId: 'S001',
     type: 'positive',
@@ -803,7 +804,7 @@ export const mockBehaviors = [
     teacherId: '2',
     teacherName: 'نورة أحمد السالم',
     date: '2025-01-15'
-  },
+  }, */
   {
     id: 'B002',
     studentId: 'S001',
