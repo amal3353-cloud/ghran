@@ -49,7 +49,7 @@ const Login = ({ onLogin }) => {
           <div className="inline-flex items-center justify-center w-20 h-20 bg-white/10 backdrop-blur-lg rounded-full mb-4 border border-white/20">
             <GraduationCap className="w-10 h-10 text-white" />
           </div>
-          <h1 className="text-4xl font-bold text-white mb-2">منصة رصد السلوك المتميز</h1>
+          <h1 className="text-4xl font-bold text-white mb-2">رواد القيم</h1>
           <p className="text-blue-100 text-lg">مدرسة متوسطة غران</p>
         </div>
 
