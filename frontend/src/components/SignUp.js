@@ -67,9 +67,6 @@ const SignUp = ({ onSignUp }) => {
 
       // Use alert instead of toast to avoid portal issues
       alert('تم إنشاء الحساب بنجاح!');
-        title: 'تم إنشاء الحساب بنجاح',
-        description: `مرحباً ${newUser.name}`
-      });
 
       navigate('/dashboard');
       setLoading(false);
