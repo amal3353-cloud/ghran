@@ -8,7 +8,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger, Dialog
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from './ui/select';
 import { toast } from '../hooks/use-toast';
 import { mockStudents, mockBehaviors, BEHAVIOR_TYPES, STAGES, getStageLabel } from '../mockData';
-import { Plus, TrendingUp, TrendingDown, Calendar } from 'lucide-react';
+import { Plus, TrendingUp, TrendingDown, Calendar, Trash2 } from 'lucide-react';
 
 const Behaviors = ({ user }) => {
   const [behaviors, setBehaviors] = useState(mockBehaviors);
