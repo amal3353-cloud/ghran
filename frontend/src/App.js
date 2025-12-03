@@ -61,6 +61,7 @@ function App() {
                 <Route path="/students" element={<Students user={user} />} />
                 <Route path="/behaviors" element={<Behaviors user={user} />} />
                 <Route path="/reports" element={<Reports user={user} />} />
+                <Route path="/settings" element={<Settings user={user} />} />
                 <Route path="/profile" element={<Profile user={user} onUpdateUser={handleUpdateUser} />} />
                 <Route path="*" element={<Navigate to="/dashboard" replace />} />
               </>
