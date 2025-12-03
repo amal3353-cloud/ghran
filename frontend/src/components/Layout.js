@@ -19,6 +19,13 @@ const Layout = ({ user, onLogout, children }) => {
 
   const navigationItems = user.role === 'student' ? [
     { path: '/', label: 'ملفي الشخصي', icon: User }
+  ] : user.role === 'principal' ? [
+    { path: '/dashboard', label: 'لوحة التحكم', icon: LayoutDashboard },
+    { path: '/students', label: 'الطالبات', icon: Users },
+    { path: '/behaviors', label: 'السلوكيات', icon: TrendingUp },
+    { path: '/reports', label: 'التقارير', icon: User },
+    { path: '/settings', label: 'الإعدادات', icon: SettingsIcon },
+    { path: '/profile', label: 'الملف الشخصي', icon: User }
   ] : [
     { path: '/dashboard', label: 'لوحة التحكم', icon: LayoutDashboard },
     { path: '/students', label: 'الطالبات', icon: Users },
