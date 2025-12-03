@@ -4,7 +4,6 @@ import { Button } from './ui/button';
 import { Input } from './ui/input';
 import { Label } from './ui/label';
 import { Card, CardHeader, CardContent, CardFooter } from './ui/card';
-import { toast } from '../hooks/use-toast';
 import { authenticateUser } from '../mockData';
 import { GraduationCap, Mail, Lock, TrendingUp, Award, FileText } from 'lucide-react';
 
