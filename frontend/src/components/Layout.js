@@ -143,7 +143,7 @@ const Layout = ({ user, onLogout, children }) => {
       <footer className="bg-white border-t border-gray-200 mt-12">
         <div className="container mx-auto px-4 py-6">
           <div className="text-center text-gray-600">
-            <p className="text-sm">© 2025 منصة رصد السلوك المتميز - جميع الحقوق محفوظة</p>
+            <p className="text-sm">© 2025 رواد القيم - جميع الحقوق محفوظة</p>
             <p className="text-xs text-gray-500 mt-1">مديرة المدرسة: عائشة عبدالعزيز الراشدي</p>
             <p className="text-xs text-gray-400 mt-1">تصميم: امل عطيه المزروعي</p>
           </div>
