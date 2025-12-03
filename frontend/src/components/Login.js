@@ -19,12 +19,24 @@ const Login = ({ onLogin }) => {
   React.useEffect(() => {
     const savedEmail = localStorage.getItem('savedEmail');
     const savedPassword = localStorage.getItem('savedPassword');
+    const savedRememberMe = localStorage.getItem('rememberMe');
+    
     if (savedEmail && savedPassword) {
       setEmail(savedEmail);
       setPassword(savedPassword);
       setRememberMe(true);
+      
+      // Auto-login if remember me was checked
+      if (savedRememberMe === 'true') {
+        const user = authenticateUser(savedEmail, savedPassword);
+        if (user) {
+          localStorage.setItem('user', JSON.stringify(user));
+          onLogin(user);
+          navigate('/dashboard');
+        }
+      }
     }
-  }, []);
+  }, [onLogin, navigate]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
