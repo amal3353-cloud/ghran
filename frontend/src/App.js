@@ -36,42 +36,37 @@ function App() {
     setUser(userData);
   };
 
-  if (!user) {
-    return (
-      <BrowserRouter>
+  return (
+    <BrowserRouter>
+      {!user ? (
         <Routes>
           <Route path="/" element={<Login onLogin={handleLogin} />} />
           <Route path="/signup" element={<SignUp onSignUp={handleLogin} />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
-        <Toaster />
-      </BrowserRouter>
-    );
-  }
-
-  return (
-    <BrowserRouter>
-      <Layout user={user} onLogout={handleLogout}>
-        <Routes>
-          {user.role === 'student' ? (
-            <>
-              <Route path="/" element={<StudentView user={user} />} />
-              <Route path="/profile" element={<Profile user={user} onUpdateUser={handleUpdateUser} />} />
-              <Route path="*" element={<Navigate to="/" replace />} />
-            </>
-          ) : (
-            <>
-              <Route path="/" element={<Navigate to="/dashboard" replace />} />
-              <Route path="/dashboard" element={<Dashboard user={user} />} />
-              <Route path="/students" element={<Students user={user} />} />
-              <Route path="/behaviors" element={<Behaviors user={user} />} />
-              <Route path="/reports" element={<Reports user={user} />} />
-              <Route path="/profile" element={<Profile user={user} onUpdateUser={handleUpdateUser} />} />
-              <Route path="*" element={<Navigate to="/dashboard" replace />} />
-            </>
-          )}
-        </Routes>
-      </Layout>
+      ) : (
+        <Layout user={user} onLogout={handleLogout}>
+          <Routes>
+            {user.role === 'student' ? (
+              <>
+                <Route path="/" element={<StudentView user={user} />} />
+                <Route path="/profile" element={<Profile user={user} onUpdateUser={handleUpdateUser} />} />
+                <Route path="*" element={<Navigate to="/" replace />} />
+              </>
+            ) : (
+              <>
+                <Route path="/" element={<Navigate to="/dashboard" replace />} />
+                <Route path="/dashboard" element={<Dashboard user={user} />} />
+                <Route path="/students" element={<Students user={user} />} />
+                <Route path="/behaviors" element={<Behaviors user={user} />} />
+                <Route path="/reports" element={<Reports user={user} />} />
+                <Route path="/profile" element={<Profile user={user} onUpdateUser={handleUpdateUser} />} />
+                <Route path="*" element={<Navigate to="/dashboard" replace />} />
+              </>
+            )}
+          </Routes>
+        </Layout>
+      )}
       <Toaster />
     </BrowserRouter>
   );
